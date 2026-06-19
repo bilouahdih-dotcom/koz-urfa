@@ -73,12 +73,13 @@
   .burger{display:none;background:none;border:none;color:var(--cream);font-size:26px;cursor:pointer}
 
   /* ---------- HERO ---------- */
-  .hero{position:relative;overflow:hidden;padding:90px 0 110px;text-align:center}
+  .hero{position:relative;overflow:hidden;padding:120px 0 130px;text-align:center;
+    background:#120d0a url('images/grillades.jpg') center/cover no-repeat;}
   .hero::before{
     content:"";position:absolute;inset:0;
     background:
-      radial-gradient(900px 500px at 50% -10%,rgba(226,86,42,.30),transparent 60%),
-      radial-gradient(700px 400px at 80% 120%,rgba(217,164,65,.14),transparent 60%);
+      radial-gradient(900px 500px at 50% -10%,rgba(226,86,42,.35),transparent 60%),
+      linear-gradient(180deg,rgba(18,13,10,.72),rgba(18,13,10,.88) 55%,rgba(18,13,10,.96));
     z-index:0;
   }
   .hero .wrap{position:relative;z-index:1}
@@ -109,6 +110,7 @@
     position:relative;overflow:hidden;display:grid;place-items:center;
   }
   .about-art .flame{font-size:120px;filter:drop-shadow(0 0 30px rgba(226,86,42,.7))}
+  .about-art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
   .feature-list{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:24px}
   .feature-list .f{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
   .feature-list .f i{font-size:22px;display:block;margin-bottom:6px}
@@ -281,7 +283,7 @@
         <div class="f"><i>🎉</i><b>Traiteur</b><small>Événements & groupes</small></div>
       </div>
     </div>
-    <div class="about-art"><div class="flame">🔥</div></div>
+    <div class="about-art"><img src="images/assiette.jpg" alt="Grillades de la maison" onerror="this.remove()"><div class="flame">🔥</div></div>
   </div>
 </section>
 
@@ -403,7 +405,7 @@
     <div class="sec-head">
       <p class="eyebrow">En images</p>
       <h2>L'ambiance & les plats</h2>
-      <p>Photos de Köz Urfa. Dépose tes images dans le dossier <code>images/</code> (voir noms ci-dessous) — elles s'afficheront ici automatiquement.</p>
+      <p>Un aperçu de nos spécialités et de l'ambiance. <span style="opacity:.65">(Photos d'illustration provisoires — à remplacer par les vraies photos du restaurant.)</span></p>
     </div>
     <div class="gal-grid">
       <div class="cell tall" data-label="Brochettes au köz">🍢<img src="images/grillades.jpg" alt="Grillades au köz" onerror="this.remove()"></div>
@@ -411,7 +413,7 @@
       <div class="cell" data-label="Sandwich kebab">🥙<img src="images/sandwich.jpg" alt="Sandwich kebab" onerror="this.remove()"></div>
       <div class="cell" data-label="Assiette">🍽️<img src="images/assiette.jpg" alt="Assiette" onerror="this.remove()"></div>
       <div class="cell" data-label="Baklava">🍮<img src="images/dessert.jpg" alt="Baklava" onerror="this.remove()"></div>
-      <div class="cell wide" data-label="La devanture">🏠<img src="images/devanture.jpg" alt="Devanture du restaurant" onerror="this.remove()"></div>
+      <div class="cell wide" data-label="Burger maison">🍔<img src="images/burger.jpg" alt="Burger maison" onerror="this.remove()"></div>
       <div class="cell" data-label="Thé turc">🫖<img src="images/the.jpg" alt="Thé turc" onerror="this.remove()"></div>
     </div>
   </div>
