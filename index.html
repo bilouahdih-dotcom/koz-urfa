@@ -144,7 +144,8 @@
     display:grid;place-items:center;font-size:46px;color:rgba(255,255,255,.25);
     background:linear-gradient(160deg,#241810,#150f0b);
   }
-  .gal-grid .cell::after{content:attr(data-label);position:absolute;bottom:10px;left:12px;font-size:12px;color:var(--muted)}
+  .gal-grid .cell img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+  .gal-grid .cell::after{content:attr(data-label);position:absolute;bottom:10px;left:12px;font-size:12px;color:#fff;z-index:2;text-shadow:0 1px 6px rgba(0,0,0,.9)}
   .gal-grid .tall{grid-row:span 2}
   .gal-grid .wide{grid-column:span 2}
 
@@ -402,16 +403,16 @@
     <div class="sec-head">
       <p class="eyebrow">En images</p>
       <h2>L'ambiance & les plats</h2>
-      <p>Remplacez ces blocs par les vraies photos du restaurant et des plats.</p>
+      <p>Photos de Köz Urfa. Dépose tes images dans le dossier <code>images/</code> (voir noms ci-dessous) — elles s'afficheront ici automatiquement.</p>
     </div>
     <div class="gal-grid">
-      <div class="cell tall" data-label="Brochettes au köz">🍢</div>
-      <div class="cell wide" data-label="Salle du restaurant">🪑</div>
-      <div class="cell" data-label="Lahmacun">🫓</div>
-      <div class="cell" data-label="Mezze">🥗</div>
-      <div class="cell" data-label="Baklava">🍮</div>
-      <div class="cell wide" data-label="Le grill">🔥</div>
-      <div class="cell" data-label="Thé turc">🫖</div>
+      <div class="cell tall" data-label="Brochettes au köz">🍢<img src="images/grillades.jpg" alt="Grillades au köz" onerror="this.remove()"></div>
+      <div class="cell wide" data-label="Salle du restaurant">🪑<img src="images/salle.jpg" alt="Salle du restaurant" onerror="this.remove()"></div>
+      <div class="cell" data-label="Sandwich kebab">🥙<img src="images/sandwich.jpg" alt="Sandwich kebab" onerror="this.remove()"></div>
+      <div class="cell" data-label="Assiette">🍽️<img src="images/assiette.jpg" alt="Assiette" onerror="this.remove()"></div>
+      <div class="cell" data-label="Baklava">🍮<img src="images/dessert.jpg" alt="Baklava" onerror="this.remove()"></div>
+      <div class="cell wide" data-label="La devanture">🏠<img src="images/devanture.jpg" alt="Devanture du restaurant" onerror="this.remove()"></div>
+      <div class="cell" data-label="Thé turc">🫖<img src="images/the.jpg" alt="Thé turc" onerror="this.remove()"></div>
     </div>
   </div>
 </section>
