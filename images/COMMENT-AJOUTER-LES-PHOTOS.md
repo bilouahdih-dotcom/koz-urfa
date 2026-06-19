@@ -1,33 +1,35 @@
-# 📸 Comment ajouter les vraies photos
+# 📸 Remplacer les photos d'illustration par les vraies
 
-Dépose tes images **dans ce dossier `images/`** en les nommant **exactement** comme ci-dessous.
-Dès qu'un fichier est présent avec le bon nom, il s'affiche tout seul dans la galerie du site.
-Si un fichier manque, l'icône de secours reste affichée (pas de bug).
+Le site contient actuellement des **photos d'illustration libres de droits** (temporaires).
+Pour mettre les **vraies photos du restaurant**, remplace simplement les fichiers de ce dossier
+en **gardant exactement le même nom**. La photo s'affiche alors automatiquement au bon endroit.
 
-## Noms de fichiers attendus
+## Fichiers utilisés par le site
 
-| Fichier à déposer | Emplacement sur le site |
+| Fichier à remplacer | Où il apparaît |
 |---|---|
-| `devanture.jpg` | La devanture du restaurant (grande case) |
-| `salle.jpg`     | L'intérieur / la salle (grande case) |
-| `grillades.jpg` | Les brochettes / grillades au köz (grande case verticale) |
-| `sandwich.jpg`  | Un sandwich kebab |
-| `assiette.jpg`  | Une assiette garnie |
-| `dessert.jpg`   | Un dessert (baklava, künefe…) |
-| `the.jpg`       | Le thé turc / une boisson |
+| `grillades.jpg` | Fond de la bannière d'accueil + case « Brochettes au köz » |
+| `assiette.jpg`  | Bloc « Notre histoire » + case « Assiette » |
+| `salle.jpg`     | Case « Salle du restaurant » |
+| `sandwich.jpg`  | Case « Sandwich kebab » |
+| `dessert.jpg`   | Case « Baklava » |
+| `burger.jpg`    | Case « Burger maison » |
+| `the.jpg`       | Case « Thé turc » |
 
-## Astuces
+> 💡 Idéalement une photo de **devanture** du restaurant : ajoute `devanture.jpg` ici et dis-le moi,
+> je l'intègre (par ex. en grande case à la place du burger).
 
-- Formats acceptés : `.jpg` ou `.png` (si tu utilises `.png`, change l'extension dans `index.html`, ou renomme simplement ton fichier en `.jpg`).
-- Idéalement des photos **horizontales** et nettes, au moins 1000 px de large.
-- ⚠️ N'utilise que des photos dont tu as le droit (celles du restaurant, ou prises par toi). Les photos Instagram appartiennent au restaurant : à utiliser une fois le client d'accord.
+## Conseils
+- Formats : `.jpg` (ou `.png`, mais garde l'extension `.jpg` dans le nom, ou préviens-moi).
+- Photos nettes, plutôt horizontales, au moins 1000 px de large.
+- ⚠️ N'utilise que des photos dont tu as le droit : celles prises au restaurant ou fournies par le client.
+  Les photos d'illustration actuelles viennent d'Unsplash (libres de droits) et sont à remplacer
+  avant une mise en ligne définitive « au nom du restaurant ».
 
-## Pour publier après ajout
-
-Dans le terminal :
+## Publier après remplacement
 ```
 git add .
-git commit -m "Ajout des vraies photos"
+git commit -m "Vraies photos du restaurant"
 git push
 ```
 Le site en ligne se met à jour tout seul.
